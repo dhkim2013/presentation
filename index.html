@@ -24,7 +24,7 @@
                     <li>연산자</li>
                     <li>표현식</li>
                     <li>주석</li>
-                    <li>명명규칙</li>
+                    <li>명명법</li>
                 </ul>
             </section>
             <section class="light" data-bespoke-state="green">
@@ -46,30 +46,233 @@
             </section>
             <section>
                 <h2 class="bullet">변수?</h2>
+                <br/>
                 <ul>
                     <li>변수(Variable)는 값을 참조하는 이름이다.</li>
                     <li><pre class="language-python"><code>a = 1
 b = 1.5
-c = 'Hello'</code></pre>
-                    </li>
+c = 'Hello'</code></pre></li>
                     <li>위의 예제는 대입문(Assignment statement)이다.</li>
                     <li>새로운 변수를 생성하고 값을 변수에 대입하는 것.</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">변수명</h2>
+                <br>
+                <ul>
+                    <li><pre class="language-python"><code>1friend = 'Jack'
+mon@y = 1000
+class = 5</code></li>
+                    <li>위와 같은 문장은 구문 오류를 발생시킨다.</li>
+                    <li>변수명은 문자로 시작해야 한다.</li>
+                    <li>변수명에 특수문자 있으면 안된다.</li>
+                    <li>예약어를 변수명으로 사용할 수 없다.</li>
+            </section>
+            <section>
+                <h2 class="bullet">예약어</h2>
+                <br>
+                <ul>
+                    <li>프로그래밍 언어상 중요하고 특정한 의미가 붙여진 미리 정해져 있는 단어</li>
+                    <br>
+                    <li>
+                        <p>
+                            and, del, from, not, while
+                        </p>
+                        <p>
+                            as, elif, global, or, with
+                        </p>
+                        <p>
+                            assert, else, if, pass, yield
+                        </p>
+                        <p>
+                            break, except, import, print, class
+                        </p>
+                        <p>
+                            exec, in, raise, continue, finally
+                        </p>
+                        <p>
+                            is, return, def, for, lamda
+                        </p>
+                        <p>
+                            try
+                        </p>
+                    </li>
                 </ul>
             </section>
             <section class="light" data-bespoke-state="green">
                 <h2 class="bullet">문장</h2>
             </section>
+            <section>
+                <h2 class="bullet">문장?</h2>
+                <br/>
+                <ul>
+                    <li>문장(Statement)은 파이썬 인터프리터가 실행하는 코드 단위다.</li>
+                    <li><pre class="language-python"><code>print(1)
+x = 2
+print(x)</code></pre></li>
+                </ul>
+            </section>
             <section class="light" data-bespoke-state="green">
                 <h2 class="bullet">연산자</h2>
+            </section>
+            <section>
+                <h2 class="bullet">연산자?</h2>
+                <br>
+                <ul>
+                    <li>연산자(Operators)는 덧셈, 곱셈 같은 계산을 표현하는 특별한 기호다.</li>
+                    <li>피연산자(Operands)는 연산자가 적용되는 값이다.</li>
+                    <li>+, -, *, /, **</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">연산수행</h2>
+                <br>
+                <ul>
+                    <li><pre class="language-python"><code>10 + 20
+10 * 5
+2 ** 3
+5 - 3
+59 / 60</code></pre></li>
+                    <li><pre class="language-python"><code>59 / 60.0</code></pre></li>
+                    <li><pre class="language-python"><code>59 // 60</code></pre></li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">연산자 우선순위</h2>
+                <br>
+                <ul>
+                    <li>괄호 > 지수승 > 곱셈, 나눗셈 > 덧셈, 뺄셈</li>
+                    <li>중괄호, 대괄호는 존재하지 않는다.</li>
+                    <li>같은 우선순위는 왼쪽에서부터 실행한다.</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">예제</h2>
+                <br>
+                <ul>
+                    <li><pre class="language-python"><code>2 * (3-1) #답 : 4</code></pre></li>
+                    <li><pre class="language-python"><code>(1 + 1) ** (5 - 2) #답 : 8</code></pre></li>
+                    <li><pre class="language-python"><code>#minute = 30
+(minute * 100) / 60 #답 : 50</code></pre></li>
+                    <li>위와 같은 경우는 가독성을 위해 괄호를 사용한 경우다.</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">나머지 연산자</h2>
+                <br>
+                <ul>
+                    <li>정수에 사용하며, 첫번째 피연산자를 두 번째 피연산자가 나눌 때 나머지 값이 생성된다.</li>
+                    <li>나머지 연산자는 %로 나타낸다.</li>
+                    <li><pre class="language-python"><code>7 % 3 #답 : 1</code></pre></li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">문자열 연산자</h2>
+                <br>
+                <ul>
+                    <li>연산자는 문자열에도 동작하지만, 수학에서 말하는 덧셈은 아니다.</li>
+                    <li>문자열 끝과 끝을 붙이는 연결 작업을 수행한다.</li>
+                    <li><pre class="language-python"><code>a = '100'
+b = '150'
+print(a + b)
+#출력 : 100150</code></pre></li>
+                </ul>
             </section>
             <section class="light" data-bespoke-state="green">
                 <h2 class="bullet">표현식</h2>
             </section>
+            <section>
+                <h2 class="bullet">표현식?</h2>
+                <br>
+                <ul>
+                    <li>표현식 (expression)은 값, 변수, 연산자 조합이다.</li>
+                    <li>값은 자체로 표현식이고, 변 수도 동일하다.</li>
+                    <li><pre class="language-python"><code>#x에 5라는 값이 대입이 되어 있다.
+15
+x
+x + 15</code></pre></li>
+                    <li>위 문장들은 모두 표현식이다.</li>
+                </ul>
+            </section>
             <section class="light" data-bespoke-state="green">
                 <h2 class="bullet">주석</h2>
             </section>
+            <section>
+                <h2 class="bullet">주석?</h2>
+                <br>
+                <ul>
+                    <li>프로그램이 커지고 복잡해짐에 따라 가독성은 떨어진다.</li>
+                    <li>무슨 역할을 왜 수행하는지 이해 하기 어렵다.</li>
+                    <li>이런 이유로 프로그램이 무엇을 하는지를 자연어로 프로그램에 노트를 달기 위해 만들어졌다.</li>
+                    <li>이런 노트를 주석(Comments)이라고 하고 # 기호로 시작한다.</li>
+                    <li># 뒤에 모든 것은 무시되기 때문에 프로그램에는 영향이 없다.</li>
+                </ul>
+            </section>
+            <section>
+                <h2 class="bullet">예제</h2>
+                <br>
+                <ul>
+                    <li><pre class="language-python"><code># 경과한 시간을 퍼센트로 계산
+percentage = (minute * 100) / 60
+</code></pre></li>
+                    <li>주석을 사용하면 보다 프로그램을 알기 쉬워진다.</li>
+                </ul>
+            </section>
             <section class="light" data-bespoke-state="green">
+                <h2 class="bullet">명명법</h2>
+            </section>
+            <section>
+                <h2 class="bullet">연상되는 변수명</h2>
+                <br>
+                <ul>
+                    <li><pre class="language-python"><code>a = 35.0
+b = 12.50
+c = a * b
+print(c)</code></pre>
+                    <pre class="language-python"><code>hours = 35.0
+rate = 12.50
+pay = a * b
+print(pay)</code></pre></li>
+                    <li>위 두 스크립트를 보았을때, 두번째 스크립트가 더욱 의미파악이 쉽다.</li>
+                    <li>변수명은 가급적이면 의미파악이 쉽게 만드는게 좋다.</li>
+                </ul>
+            </section>
+            <section>
                 <h2 class="bullet">명명규칙</h2>
+                <br>
+                <ul>
+                    <li>변수의 의미파악과 가독성을 위해 사용하는 여러가지 명명규칙들이 있다.</li>
+                    <br>
+                    <li>
+                        <p>
+                        <strong>Camel Case</strong>
+                        </p>
+                        <p>
+                            ex) backgroundColor, typeName
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <strong>Pascal Case</strong>
+                        </p>
+                        <p>
+                            ex) BackgroundColor, TypeName
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                        <strong>Snake Case</strong>
+                        </p>
+                        <p>
+                            ex) background_color, type_name
+                        </p>
+                    </li>
+                    <br>
+                    <li>이 밖에도 여러 명명규칙이 존재한다.</li>
+                </ul>
+            </section>
+            <section class="light" data-bespoke-state="green">
+                <h2 class="bullet">Thank you</h2>
             </section>
         </article>
         <script src="scripts/scripts.js"></script>
